@@ -1,0 +1,109 @@
+.mainbody{
+    width: 93%;
+    margin-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.info{
+    margin-bottom: 215px;
+    margin-top: 150px;
+}
+.info>h1{
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+}
+.skillTitle >h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+.skills{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.back_design{
+    position: relative;
+    top: -500px;
+    margin-bottom: -600px;
+    z-index: -10;
+    
+    
+}
+.c3{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    
+    position: relative;
+    left: 70%;
+    top: -70px;
+}
+
+.c1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+   
+    position: relative;
+    top: 200px;
+    /* bottom: -8px; */
+    left: 150px;
+}
+.c2{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+    position: relative;
+    top: 100px;
+    left: 0;
+}
+.c1,.c2,.c3{
+    background-color: rgba(238,238,238,1);
+    
+    border: 0.5px solid lightgray;
+    z-index: -100;
+    opacity: 0.6;
+    animation-name: circles;
+    animation-duration: 3s;
+}
+.top{
+    animation-name: topSlide;
+    animation-duration: 1s;
+}
+.left{
+    animation-name: leftSlide;
+    animation-duration: 1s;
+}
+.bottom{
+    animation-name: bottomSlide;
+    animation-duration: 1s;
+}
+
+@keyframes topSlide{
+    from {top: -40px;}
+    to {top: 0px;}
+}
+@keyframes leftSlide{
+    from {left: -40px;}
+    to {left: 0px;}
+}
+@keyframes bottomSlide{
+    from {bottom: -40px;}
+    to {bottom: 0px;}
+}
+
+@keyframes circles {
+    from { top: 0; left: 30;}
+    to {  top: 40; left: -90;  }
+    /* 100%{  top: 140; left: 190; } */
+  }
